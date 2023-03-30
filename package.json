@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "tsx watch --clear-screen=false src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.2"
+  }
+}
