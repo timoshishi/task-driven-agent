@@ -2,20 +2,7 @@
 
 import { Task, TaskStatus } from './Task'
 import { TaskManager } from './TaskManager'
-
-class MockTaskManager {
-  private tasks: Map<string, Task>
-
-  constructor(tasks: Task[]) {
-    this.tasks = new Map()
-    tasks.forEach((task) => this.tasks.set(task.id, task))
-  }
-
-  getTask(taskId: string): Task | null {
-    return this.tasks.get(taskId) || null
-  }
-}
-
+import { MockTaskManager } from '../mockClients'
 describe('Task', () => {
   const task = new Task('1', 'Test task', 1)
 

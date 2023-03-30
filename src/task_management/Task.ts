@@ -69,7 +69,7 @@ export class Task {
 
   /**
    * Checks if the task has met all its dependencies.
-   * @param {Task[]} allTasks - List of all tasks in the system.
+   * @param {TaskManager} taskManager - The task manager to use to check dependencies.
    * @returns {boolean} True if all dependencies are met, false otherwise.
    */
   public dependenciesMet(taskManager: TaskManager): boolean {
